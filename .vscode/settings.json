@@ -1,0 +1,8 @@
+{
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnusedImport": "information",
+        "reportMissingImports": "none"
+    },
+    
+    "python.defaultInterpreterPath": "C:/Users/Richard Sinclair/AppData/Local/Programs/Python/Python311"
+}

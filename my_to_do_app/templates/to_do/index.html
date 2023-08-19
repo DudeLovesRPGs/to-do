@@ -1,14 +1,19 @@
 {% extends "../base.html" %} 
 {%block title%}Todo{%endblock%} 
 {%block content%}
-<div class="row">
+<div class="row mt-4">
   <div class="col">
     <h2>Add Item</h2>
-    <input type="text" class="form-control mb-2 mr-small-2" placeholder="type here...">
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="text" class="form-control mb-2 mr-small-2 rounded" placeholder="type here...">
+            <button type="button" class="btn btn-primary mb-2 ms-2 rounded">Submit</button>
+
+        </div>
+    </form>
   </div>
 </div>
-<div class="row py-2">
+<div class="row mt-4">
     <div class="col">
         <ul class="list-group">
             <li class="list-group-item" aria-current="true">A first item</li>

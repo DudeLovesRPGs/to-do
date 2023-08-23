@@ -4,9 +4,10 @@
 <div class="row mt-4">
   <div class="col">
     <h2>Add Item</h2>
-    <form method = "POST" action = "/todo/add_todo/" name ="content" class="form-inline">{%csrf_token%}
+    <form method = "POST" action = "/todo/add_todo/" class="form-inline">
+      {%csrf_token%}
         <div class="input-group">
-            <input type="text" class="form-control mb-2 mr-small-2 rounded" placeholder="type here...">
+            <input type="text" name = "content" class="form-control mb-2 mr-small-2 rounded" placeholder="type here...">
             <button type="submit" class="btn btn-primary mb-2 ms-2 rounded">Submit</button>
 
         </div>

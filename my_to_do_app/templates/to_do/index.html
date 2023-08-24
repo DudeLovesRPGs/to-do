@@ -4,7 +4,7 @@
 <div class="row mt-4">
   <div class="col">
     <h2>Add Item</h2>
-    <form method = "POST" action = "/todo/add_todo/" class="form-inline">
+    <form method = "POST" action = "/add_todo/" class="form-inline">
       {%csrf_token%}
         <div class="input-group">
             <input type="text" name = "content" class="form-control mb-2 mr-small-2 rounded" placeholder="type here...">
@@ -21,7 +21,7 @@
             <li class="list-group-item">
               {{todo.text}}
               <div class = "float-end">
-                <form action="/todo/delete_todo/{{todo.id}}/" method="POST">
+                <form action="/delete_todo/{{todo.id}}/" method="POST">
                   {%csrf_token%}
                   <button type="submit" class="btn btn-sm btn-danger mb-2 ms-2 rounded">Delete</button>
                 </form>

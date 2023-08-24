@@ -17,3 +17,9 @@ def add_todo(request):
     content = request.POST['content']
     new_todo = Todo.objects.create(added_date = done_by, text = content)
     return HttpResponseRedirect("/todo/")
+
+@csrf_protect
+def delete_todo(request, todo_id):
+    print(todo_id)
+    Todo.objects.get(id = todo_id).delete()
+    return HttpResponseRedirect("/todo/")
